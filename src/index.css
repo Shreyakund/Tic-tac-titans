@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; 
+  overflow-y: hidden; /* Prevent horizontal scrollbar */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.neon-text {
+  color: #ffffff;
+  text-shadow:
+    0 0 3px #ffffff,
+    0 0 6px #ffffff,
+    0 0 9px #ffffff,
+    0 0 12px #00ff00,
+    0 0 15px #00ff00,
+    0 0 18px #00ff00;
+}
+
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 0.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem; 
+}
+
+.grid-item:hover {
+  background: rgba(255, 255, 255, 1); 
+}
+
+
+@font-face {
+  font-family: 'adventure';
+  src: url('./Adventure.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
